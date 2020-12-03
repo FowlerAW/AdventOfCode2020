@@ -10,9 +10,15 @@ namespace AdventOfCode2020
     {
         public static void demo()
         {
+            Console.WriteLine("\nDay2 Take1");
             new Day2P1().part1();
             new Day2P1().part2();
+
+            Console.WriteLine("\nDay2 Take2");
             new day2take2().part1();
+
+            Console.WriteLine("\nDay2 Take3");
+            take3.solve(@"c:\temp\day2input.txt");
         }
 
         class Day2P1
@@ -119,6 +125,29 @@ namespace AdventOfCode2020
                 Console.WriteLine($"Part1: {p1count} valid Passwords\nPart2: {p2count} valid passwords.");
             }
 
+        }
+
+        class take3
+        {
+            public static void solve(string filename)
+            {
+                (int i1,int i2, char c,string p) parseLine(string line)
+                {
+                    var tokens = line.Split(new char[] { '-', ' ', ':'});
+                    return (int.Parse(tokens[0]), int.Parse(tokens[1]), char.Parse(tokens[2]), tokens[4]);
+                }
+
+                bool validP1((int min, int max, char c, string pw) l)
+                {
+                    var ccount = l.pw.Count(x => x == l.c);
+                    return ccount >= l.min && ccount<=l.max;
+                }
+
+                var data = File.ReadAllLines(filename).Select(parseLine);
+                Console.WriteLine($"Part1: {data.Count(validP1)} valid Passwords.");
+                Console.WriteLine($"Part2: {data.Count(_=>_.p[_.i1-1]==_.c^ _.p[_.i2-1]==_.c)} valid passwords.");
+
+            }
         }
     }
 }
