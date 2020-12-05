@@ -9,7 +9,7 @@ namespace AdventOfCode2020
     {
         public static string[] getFileAsStrings(string filename)
         {
-            var delimiters = new string[] { "\r\n" };
+            var delimiters = new string[] { "\r\n","\n" };
             return File.ReadAllText(filename).Trim().Split(delimiters, StringSplitOptions.None);
         }
 
