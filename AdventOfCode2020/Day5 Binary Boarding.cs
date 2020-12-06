@@ -10,17 +10,17 @@ namespace AdventOfCode2020
     {
         public static void demo()
         {
-            new Day5P1().part1();
+            //new Day5P1().part1();
 
             Console.WriteLine("Day 5.  The first and second rows represent row number, read vertically.  Other characters are column number.  The blank spot is your seat.");
             //new Day5P2().part1();
         }
 
-        class Day5P1
+        class Take1
         {
             string filename = @"c:\temp\Day5input.txt";
             string testfilename = @"c:\temp\Day5test1input.txt";
-            public Day5P1()
+            public Take1()
             {
 
             }
