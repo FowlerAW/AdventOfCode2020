@@ -6,7 +6,7 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            Day7.demo();
+            Day8.demo();
 
             //bigDemo();
         }
@@ -23,6 +23,8 @@ namespace AdventOfCode2020
             Day5.demo();
             Day6.demo();
             Console.ReadKey();
+            Day7.demo();
+            
         }
     }
 }
