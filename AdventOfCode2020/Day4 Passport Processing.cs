@@ -11,12 +11,14 @@ namespace AdventOfCode2020
     {
         public static void demo()
         {
-            Console.WriteLine("\n(press any key to continue)");
-            Console.ReadKey();
-
             Console.WriteLine("\nDay4");
             new Day4P1().part1();
             //new Day4P2().part1();
+
+            Console.WriteLine("\n\nDay 4");
+            Console.WriteLine("(press any key to continue)");
+            Console.ReadKey();
+            Console.Clear();
         }
 
         class Day4P1

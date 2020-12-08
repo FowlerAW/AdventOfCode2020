@@ -19,6 +19,12 @@ namespace AdventOfCode2020
 
             Console.WriteLine("\nDay2 Take3");
             take3.solve(@"c:\temp\day2input.txt");
+
+
+            Console.WriteLine("\n\nDay 2");
+            Console.WriteLine("(press any key to continue)");
+            Console.ReadKey();
+            Console.Clear();
         }
 
         class Day2P1

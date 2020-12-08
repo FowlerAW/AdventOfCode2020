@@ -17,9 +17,6 @@ namespace AdventOfCode2020
             Day2.demo();
             Day3.demo();
             Day4.demo();
-            Console.WriteLine("\nPress any key to continue with day 5 (The quick implementation relies on starting with a blank screen.)");
-            Console.ReadKey();
-            Console.Clear();
             Day5.demo();
             Day6.demo();
             Console.ReadKey();

@@ -31,10 +31,16 @@ namespace AdventOfCode2020
                 "\n" +
                 "(press any key to continue)");
             Console.ReadKey();
+            
 
 
 
             new Take1().part1();
+
+            Console.WriteLine("\n\nDay 6");
+            Console.WriteLine("(press any key to continue)");
+            Console.ReadKey();
+            Console.Clear();
 
         }
 

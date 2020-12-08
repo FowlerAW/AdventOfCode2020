@@ -10,20 +10,21 @@ namespace AdventOfCode2020
     {
         public static void demo()
         {
-            //new Day5P1().part1();
 
-            Console.WriteLine("Day 5.  The first and second rows represent row number, read vertically.  Other characters are column number.  The blank spot is your seat.");
-            //new Day5P2().part1();
+
+            new Take1().part1();
+            Console.WriteLine("\nDay 5.  The first and second rows represent row number, read vertically.  Other characters are column number.  The blank spot is your seat.");
+
+            Console.WriteLine("\n(press any key to continue)");
+            Console.ReadKey();
+            Console.Clear();
         }
 
         class Take1
         {
             string filename = @"c:\temp\Day5input.txt";
             string testfilename = @"c:\temp\Day5test1input.txt";
-            public Take1()
-            {
-
-            }
+            double max=0;
 
             public void part1()
             {
@@ -42,8 +43,7 @@ namespace AdventOfCode2020
                     l[i] = 0;
                     r[i] = 0;
                 }
-                double row,seat,max;
-                max = 0;
+
                 foreach (var linex in lines)
                 {
                     var line = linex;
@@ -57,7 +57,7 @@ namespace AdventOfCode2020
                 //print("FBBBBFBRLL", '@');
 
                 Console.SetCursorPosition(0, 10);
-
+                Console.WriteLine("Max id: " + max);
                 //Console.ReadKey();
             }
 
@@ -78,7 +78,8 @@ namespace AdventOfCode2020
 
                 }
 
-
+                if (8 * row + seat > max)
+                    max = 8 * row + seat;
 
                 Console.SetCursorPosition((int)row, (int)seat);
                 if (c == 'X')
@@ -100,16 +101,6 @@ namespace AdventOfCode2020
                     Console.Write(c);
             }
 
-
-            public void part2()
-            {
-                var lines = File.ReadAllText(testfilename).Trim().Split(new string[] { "\r\n" }, StringSplitOptions.None);
-
-                string result = "bar";
-
-                Console.WriteLine(result);
-                //Console.ReadKey();
-            }
 
         }
 

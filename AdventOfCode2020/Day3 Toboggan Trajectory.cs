@@ -14,11 +14,16 @@ namespace AdventOfCode2020
             //new Day3P1().part1();
 
             Take2.solve(@"c:\temp\day3input.txt");
+
+            Console.WriteLine("\n\nDay 3");
+            Console.WriteLine("(press any key to continue)");
+            Console.ReadKey();
+            Console.Clear();
         }
 
         class Day3P1
         {
-            string filename = @"c:\temp\day3inputb.txt";
+            string filename = @"c:\temp\day3input.txt";
             string testfilename = @"c:\temp\day3test1input.txt";
             public void part1()
             {
