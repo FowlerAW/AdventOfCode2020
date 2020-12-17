@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace AdventOfCode2020
 {
-    class Day13
+    class Day23
     {
         public static void demo()
         {
@@ -18,14 +18,14 @@ namespace AdventOfCode2020
 
         class Take1
         {
-            string filename = @"c:\temp\Day13input.txt";
-            string testfilename = @"c:\temp\Day13test1input.txt";
+            string filename = @"c:\temp\Day23input.txt";
+            string testfilename = @"c:\temp\Day23test1input.txt";
 
 
             public void part1()
             {
                 long result = 0;
-                var dd = new Dictionary<char, int>();
+                var dd= new Dictionary<char, int>();
 
                 var lines = File.ReadAllText(filename).Trim().Split(new string[] { "\r\n" }, StringSplitOptions.None);
 

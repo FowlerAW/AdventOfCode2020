@@ -15,7 +15,7 @@ namespace AdventOfCode2020
 
         class Take1
         {
-            string filename = @"c:\temp\Day9input.txt";
+            string filename = @"c:\temp\Day9inputb.txt";
             string testfilename = @"c:\temp\Day9test1input.txt";
 
             List<ulong> nums;
